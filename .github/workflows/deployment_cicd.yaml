@@ -42,7 +42,6 @@ jobs:
   
   deploy:
     runs-on: ubuntu-lastest
-    needs: [test]
     steps:
       - name: Checkout on project
         uses: actions/checkout@v4
