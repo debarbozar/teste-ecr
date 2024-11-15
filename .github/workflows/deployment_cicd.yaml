@@ -41,8 +41,7 @@ jobs:
           pytest --cov=app --cov-report=term --cov-fail-under=100
   
   deploy:
-    runs-on: ubuntu-lastest
-    needs: [test]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout on project
         uses: actions/checkout@v4
