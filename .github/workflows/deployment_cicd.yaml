@@ -74,8 +74,3 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG_LATESTTAG
 
           echo "Docker image pushed successfully!"
-
-          ""parm: Adição de um Tag de Versão: Em vez de usar apenas a tag latest,
-          é uma boa prática adicionar uma tag de versão baseada em algo único, 
-          como o hash do commit ou o número da versão, para facilitar a identificação 
-          do que foi implantado.""
