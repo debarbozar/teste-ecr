@@ -29,6 +29,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest black  # Add black here
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      
+      - name: Install pytest-cov
+        run: pip install pytest-cov
 
       - name: Format with Black
         run: black .
