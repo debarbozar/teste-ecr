@@ -1,4 +1,7 @@
 from app.utils import get_user_by_username
 
 def test_username():
-    assert get_user_by_username() == str
+    username = "test_user"
+    email = "test@example.com"
+    result = get_user_by_username(username, email)
+    assert isinstance(result, str)
